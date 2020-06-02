@@ -1,6 +1,6 @@
 # Getting Started
 
-Test project to add schools with name address and other information and search schools by name and address.
+Test project to display student assignment information and grade based on the answer each and evert student provide.
 
 # Build and Deployement instruction
 
@@ -49,7 +49,7 @@ In the project root directory execute the following bach script
 ## Start the application
 
 ```bash
-java -jar -Dspring.profiles.active=dev target/schoolbag-0.0.1-SNAPSHOT.jar
+java -jar -Dspring.profiles.active=dev target/student-grade-0.0.1-SNAPSHOT.jar
 ```
 
 After execting above command application is avialable at http://localhost:8080

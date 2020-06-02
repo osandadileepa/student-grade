@@ -57,7 +57,7 @@ public class Student extends BaseModel {
 	@ManyToOne(cascade = CascadeType.DETACH, fetch = FetchType.EAGER)
 	private SchoolClass schoolClass;
 
-	@ManyToMany(cascade = CascadeType.DETACH, fetch = FetchType.EAGER)
+	@ManyToMany(cascade = CascadeType.DETACH, fetch = FetchType.LAZY)
 	@JoinTable(joinColumns = {
 			@JoinColumn(name = "student_id", referencedColumnName = "id", nullable = true) }, inverseJoinColumns = {
 					@JoinColumn(name = "result_id", referencedColumnName = "id", nullable = true) })

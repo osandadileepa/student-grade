@@ -9,6 +9,7 @@ spring:
     dbcp2:
       validation-query: SELECT 1
       test-on-borrow: true
+    initialization-mode: always
   jpa:
     show-sql: false
     hibernate:
