@@ -18,7 +18,7 @@ RUN ./mvnw clean install -DskipTests
 
 
 FROM builder
-COPY --from=builder /app/source/target/*.jar schoolbag-0.0.1-SNAPSHOT.jar
+COPY --from=builder /app/source/target/*.jar student-grade-0.0.1-SNAPSHOT.jar
 EXPOSE 8080
 ENTRYPOINT [ "java", "-jar", "-Dspring.profiles.active=prod", "student-grade-0.0.1-SNAPSHOT.jar"]
 

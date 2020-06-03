@@ -2,13 +2,6 @@ package com.osanda.studentgrade.model;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
-/***
- * 
- * includea all the details regards to a quetsion
- * 
- * @author Osanda Wedamulla
- *
- */
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
@@ -19,6 +12,14 @@ import javax.persistence.ManyToOne;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+
+/***
+ * 
+ * includes all the details regards to a quetsion
+ * 
+ * @author Osanda Wedamulla
+ *
+ */
 
 @Entity
 @Getter

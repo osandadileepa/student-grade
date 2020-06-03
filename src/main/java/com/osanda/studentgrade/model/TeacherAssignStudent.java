@@ -12,6 +12,15 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+/***
+ * 
+ * include records of every assignment that a Teacher assigns to a particular
+ * student
+ * 
+ * @author Osanda Wedamulla
+ *
+ */
+
 @Entity
 @Getter
 @Setter

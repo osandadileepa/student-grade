@@ -12,7 +12,7 @@ import lombok.Setter;
 
 /***
  * 
- * answer types that can be added dynamicaly if needed
+ * answer types that can be added dynamically if needed
  * 
  * @author Osanda Wedamulla
  *

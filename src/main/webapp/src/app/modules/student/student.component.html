@@ -1,6 +1,6 @@
 <div fxLayout="column" fxLayoutAlign="center center">
 
-  <h1> Welcome Student {{student?.name}} of Age : {{student?.age}} at : {{student?.grade}}</h1>
+  <h1> Welcome Student <span style="color: #f44336">{{student?.name}}</span> of Age : {{student?.age}} at : {{student?.grade}}</h1>
   <a routerLink="/teacher"> <h3> Teacher's View </h3></a>
 
   <mat-divider></mat-divider>
@@ -9,8 +9,8 @@
     <mat-list>
       <mat-list-item *ngFor="let result of results; let i = index">
 
-        {{i +1 }} . <b>{{result.question.name}}</b> [{{result.question.assignment}}] : your Answer is : {{result.question.answer}}. with marks :- ({{result.question.marks}}). Result is ==> {{result.answerStatus}}
-        and have spent {{result.timeSpent}} seconds with {{result.attempts}}.
+        {{i +1 }} . <h2>{{result.question.name}}</h2> [{{result.question.assignment}}] : Your Answer is : {{result.question.answer}}. with marks :- ({{result.question.marks}}).
+        Result is ==> <h5> &nbsp; {{result.answerStatus}}</h5> &nbsp; and have spent {{result.timeSpent}} seconds with {{result.attempts}}.
 
       </mat-list-item>
     </mat-list>
