@@ -14,6 +14,14 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+/***
+ * 
+ * physical class information located in a school		
+ * 	
+ * @author Osanda Wedamulla
+ *
+ */
+
 @Entity
 @Getter
 @Setter
@@ -25,6 +33,8 @@ public class SchoolClass extends BaseModel {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
+
+	private String name;
 
 	@OneToMany(mappedBy = "schoolClass", fetch = FetchType.EAGER, cascade = CascadeType.DETACH)
 	private Set<Student> students;

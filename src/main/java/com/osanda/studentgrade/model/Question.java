@@ -15,7 +15,7 @@ import lombok.Setter;
 
 /***
  * 
- * includes all the details regards to a quetsion
+ * includes all the details regards to a questions
  * 
  * @author Osanda Wedamulla
  *

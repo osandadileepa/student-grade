@@ -12,7 +12,8 @@ import lombok.Setter;
 
 /***
  * 
- * model includes the basic information relevant to a student
+ * relevant to s student about the questioon that
+ * a particular student answered
  * 
  * @author Osanda Wedamulla
  *

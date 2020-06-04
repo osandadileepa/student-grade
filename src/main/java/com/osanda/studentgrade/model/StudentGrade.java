@@ -1,5 +1,6 @@
 package com.osanda.studentgrade.model;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
@@ -19,7 +20,7 @@ import lombok.Setter;
 /***
  * 
  * all the students that are assigned with a assignment grade is presented based
- * on the teacher's obervation
+ * on the teacher's observation
  * 
  * @author Osanda Wedamulla
  *
@@ -41,10 +42,10 @@ public class StudentGrade extends BaseModel {
 	@Enumerated(EnumType.STRING)
 	private Grade grade;
 
-	@OneToOne
+	@OneToOne(cascade = CascadeType.DETACH)
 	private Student student;
 
-	@OneToOne
+	@OneToOne(cascade = CascadeType.DETACH)
 	private Assignment assignment;
 
 }

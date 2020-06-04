@@ -1,5 +1,6 @@
 package com.osanda.studentgrade.model;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -34,13 +35,13 @@ public class TeacherAssignStudent extends BaseModel {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 
-	@OneToOne
+	@OneToOne(cascade = CascadeType.DETACH)
 	private Student student;
 
-	@OneToOne
+	@OneToOne(cascade = CascadeType.DETACH)
 	private Teacher teacher;
 
-	@OneToOne
+	@OneToOne(cascade = CascadeType.DETACH)
 	private Assignment assignment;
 
 }
